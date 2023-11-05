@@ -1,0 +1,6 @@
+/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles/tema1.dir
+/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles/edit_cache.dir
+/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles/rebuild_cache.dir
+/Users/alexkosa/Desktop/paoo/tema1/build/FileManager/CMakeFiles/FileManager.dir
+/Users/alexkosa/Desktop/paoo/tema1/build/FileManager/CMakeFiles/edit_cache.dir
+/Users/alexkosa/Desktop/paoo/tema1/build/FileManager/CMakeFiles/rebuild_cache.dir
