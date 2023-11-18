@@ -224,4 +224,6 @@ CMakeFiles/tema1.dir/main.cxx.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference \
-  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/FileManager.h
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/CppFileManager.h \
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/FileManager.h \
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/JavaFileManager.h

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libJavaFileManager.a CMakeFiles/JavaFileManager.dir/JavaFileManager.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libJavaFileManager.a

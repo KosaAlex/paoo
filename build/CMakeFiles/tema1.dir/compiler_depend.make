@@ -226,8 +226,12 @@ CMakeFiles/tema1.dir/main.cxx.o: /Users/alexkosa/Desktop/paoo/tema1/src/main.cxx
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h \
-  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/FileManager.h
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/CppFileManager.h \
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/FileManager.h \
+  /Users/alexkosa/Desktop/paoo/tema1/src/FileManager/JavaFileManager.h
 
+
+/Users/alexkosa/Desktop/paoo/tema1/src/FileManager/JavaFileManager.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/stdint.h:
 
@@ -354,6 +358,8 @@ CMakeFiles/tema1.dir/main.cxx.o: /Users/alexkosa/Desktop/paoo/tema1/src/main.cxx
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/i386/_types.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/atomic:
+
+/Users/alexkosa/Desktop/paoo/tema1/src/FileManager/CppFileManager.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/assert.h:
 

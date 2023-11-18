@@ -130,6 +130,58 @@ FileManager/fast:
 	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/build
 .PHONY : FileManager/fast
 
+# Convenience name for target.
+FileManager/CMakeFiles/JavaFileManager.dir/rule:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FileManager/CMakeFiles/JavaFileManager.dir/rule
+.PHONY : FileManager/CMakeFiles/JavaFileManager.dir/rule
+
+# Convenience name for target.
+JavaFileManager: FileManager/CMakeFiles/JavaFileManager.dir/rule
+.PHONY : JavaFileManager
+
+# fast build rule for target.
+JavaFileManager/fast:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/build
+.PHONY : JavaFileManager/fast
+
+# Convenience name for target.
+FileManager/CMakeFiles/CppFileManager.dir/rule:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FileManager/CMakeFiles/CppFileManager.dir/rule
+.PHONY : FileManager/CMakeFiles/CppFileManager.dir/rule
+
+# Convenience name for target.
+CppFileManager: FileManager/CMakeFiles/CppFileManager.dir/rule
+.PHONY : CppFileManager
+
+# fast build rule for target.
+CppFileManager/fast:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/build
+.PHONY : CppFileManager/fast
+
+CppFileManager.o: CppFileManager.cpp.o
+.PHONY : CppFileManager.o
+
+# target to build an object file
+CppFileManager.cpp.o:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/CppFileManager.cpp.o
+.PHONY : CppFileManager.cpp.o
+
+CppFileManager.i: CppFileManager.cpp.i
+.PHONY : CppFileManager.i
+
+# target to preprocess a source file
+CppFileManager.cpp.i:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/CppFileManager.cpp.i
+.PHONY : CppFileManager.cpp.i
+
+CppFileManager.s: CppFileManager.cpp.s
+.PHONY : CppFileManager.s
+
+# target to generate assembly for a file
+CppFileManager.cpp.s:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/CppFileManager.cpp.s
+.PHONY : CppFileManager.cpp.s
+
 FileManager.o: FileManager.cpp.o
 .PHONY : FileManager.o
 
@@ -154,6 +206,30 @@ FileManager.cpp.s:
 	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/FileManager.cpp.s
 .PHONY : FileManager.cpp.s
 
+JavaFileManager.o: JavaFileManager.cpp.o
+.PHONY : JavaFileManager.o
+
+# target to build an object file
+JavaFileManager.cpp.o:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/JavaFileManager.cpp.o
+.PHONY : JavaFileManager.cpp.o
+
+JavaFileManager.i: JavaFileManager.cpp.i
+.PHONY : JavaFileManager.i
+
+# target to preprocess a source file
+JavaFileManager.cpp.i:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/JavaFileManager.cpp.i
+.PHONY : JavaFileManager.cpp.i
+
+JavaFileManager.s: JavaFileManager.cpp.s
+.PHONY : JavaFileManager.s
+
+# target to generate assembly for a file
+JavaFileManager.cpp.s:
+	cd /Users/alexkosa/Desktop/paoo/tema1/build && $(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/JavaFileManager.cpp.s
+.PHONY : JavaFileManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... CppFileManager"
 	@echo "... FileManager"
+	@echo "... JavaFileManager"
+	@echo "... CppFileManager.o"
+	@echo "... CppFileManager.i"
+	@echo "... CppFileManager.s"
 	@echo "... FileManager.o"
 	@echo "... FileManager.i"
 	@echo "... FileManager.s"
+	@echo "... JavaFileManager.o"
+	@echo "... JavaFileManager.i"
+	@echo "... JavaFileManager.s"
 .PHONY : help
 
 

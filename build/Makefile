@@ -142,6 +142,32 @@ FileManager/fast:
 	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/build
 .PHONY : FileManager/fast
 
+#=============================================================================
+# Target rules for targets named JavaFileManager
+
+# Build rule for target.
+JavaFileManager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JavaFileManager
+.PHONY : JavaFileManager
+
+# fast build rule for target.
+JavaFileManager/fast:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/build
+.PHONY : JavaFileManager/fast
+
+#=============================================================================
+# Target rules for targets named CppFileManager
+
+# Build rule for target.
+CppFileManager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CppFileManager
+.PHONY : CppFileManager
+
+# fast build rule for target.
+CppFileManager/fast:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/build
+.PHONY : CppFileManager/fast
+
 main.o: main.cxx.o
 .PHONY : main.o
 
@@ -174,7 +200,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... CppFileManager"
 	@echo "... FileManager"
+	@echo "... JavaFileManager"
 	@echo "... tema1"
 	@echo "... main.o"
 	@echo "... main.i"

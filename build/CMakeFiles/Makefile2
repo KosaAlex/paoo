@@ -81,6 +81,8 @@ clean: FileManager/clean
 
 # Recursive "all" directory target.
 FileManager/all: FileManager/CMakeFiles/FileManager.dir/all
+FileManager/all: FileManager/CMakeFiles/JavaFileManager.dir/all
+FileManager/all: FileManager/CMakeFiles/CppFileManager.dir/all
 .PHONY : FileManager/all
 
 # Recursive "preinstall" directory target.
@@ -89,6 +91,8 @@ FileManager/preinstall:
 
 # Recursive "clean" directory target.
 FileManager/clean: FileManager/CMakeFiles/FileManager.dir/clean
+FileManager/clean: FileManager/CMakeFiles/JavaFileManager.dir/clean
+FileManager/clean: FileManager/CMakeFiles/CppFileManager.dir/clean
 .PHONY : FileManager/clean
 
 #=============================================================================
@@ -96,14 +100,16 @@ FileManager/clean: FileManager/CMakeFiles/FileManager.dir/clean
 
 # All Build rule for target.
 CMakeFiles/tema1.dir/all: FileManager/CMakeFiles/FileManager.dir/all
+CMakeFiles/tema1.dir/all: FileManager/CMakeFiles/JavaFileManager.dir/all
+CMakeFiles/tema1.dir/all: FileManager/CMakeFiles/CppFileManager.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema1.dir/build.make CMakeFiles/tema1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=3,4 "Built target tema1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=7,8 "Built target tema1"
 .PHONY : CMakeFiles/tema1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tema1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tema1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 0
 .PHONY : CMakeFiles/tema1.dir/rule
@@ -124,7 +130,7 @@ CMakeFiles/tema1.dir/clean:
 FileManager/CMakeFiles/FileManager.dir/all:
 	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=1,2 "Built target FileManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=3,4 "Built target FileManager"
 .PHONY : FileManager/CMakeFiles/FileManager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -142,6 +148,58 @@ FileManager: FileManager/CMakeFiles/FileManager.dir/rule
 FileManager/CMakeFiles/FileManager.dir/clean:
 	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/FileManager.dir/build.make FileManager/CMakeFiles/FileManager.dir/clean
 .PHONY : FileManager/CMakeFiles/FileManager.dir/clean
+
+#=============================================================================
+# Target rules for target FileManager/CMakeFiles/JavaFileManager.dir
+
+# All Build rule for target.
+FileManager/CMakeFiles/JavaFileManager.dir/all:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/depend
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=5,6 "Built target JavaFileManager"
+.PHONY : FileManager/CMakeFiles/JavaFileManager.dir/all
+
+# Build rule for subdir invocation for target.
+FileManager/CMakeFiles/JavaFileManager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FileManager/CMakeFiles/JavaFileManager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 0
+.PHONY : FileManager/CMakeFiles/JavaFileManager.dir/rule
+
+# Convenience name for target.
+JavaFileManager: FileManager/CMakeFiles/JavaFileManager.dir/rule
+.PHONY : JavaFileManager
+
+# clean rule for target.
+FileManager/CMakeFiles/JavaFileManager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/JavaFileManager.dir/build.make FileManager/CMakeFiles/JavaFileManager.dir/clean
+.PHONY : FileManager/CMakeFiles/JavaFileManager.dir/clean
+
+#=============================================================================
+# Target rules for target FileManager/CMakeFiles/CppFileManager.dir
+
+# All Build rule for target.
+FileManager/CMakeFiles/CppFileManager.dir/all:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/depend
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles --progress-num=1,2 "Built target CppFileManager"
+.PHONY : FileManager/CMakeFiles/CppFileManager.dir/all
+
+# Build rule for subdir invocation for target.
+FileManager/CMakeFiles/CppFileManager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FileManager/CMakeFiles/CppFileManager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexkosa/Desktop/paoo/tema1/build/CMakeFiles 0
+.PHONY : FileManager/CMakeFiles/CppFileManager.dir/rule
+
+# Convenience name for target.
+CppFileManager: FileManager/CMakeFiles/CppFileManager.dir/rule
+.PHONY : CppFileManager
+
+# clean rule for target.
+FileManager/CMakeFiles/CppFileManager.dir/clean:
+	$(MAKE) $(MAKESILENT) -f FileManager/CMakeFiles/CppFileManager.dir/build.make FileManager/CMakeFiles/CppFileManager.dir/clean
+.PHONY : FileManager/CMakeFiles/CppFileManager.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libCppFileManager.a CMakeFiles/CppFileManager.dir/CppFileManager.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libCppFileManager.a

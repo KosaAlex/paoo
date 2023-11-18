@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/tema1.dir/main.cxx.o -o tema1  FileManager/libFileManager.a 
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/tema1.dir/main.cxx.o -o tema1  FileManager/libFileManager.a FileManager/libJavaFileManager.a FileManager/libCppFileManager.a 
