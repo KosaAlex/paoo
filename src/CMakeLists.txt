@@ -9,6 +9,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(tema1 main.cxx)
 
 target_link_libraries(tema1 PUBLIC FileManager)
+target_link_libraries(tema1 PUBLIC JavaFileManager)
+target_link_libraries(tema1 PUBLIC CppFileManager)
 
 target_include_directories(tema1 PUBLIC
                            "${PROJECT_BINARY_DIR}")

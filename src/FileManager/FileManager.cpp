@@ -2,6 +2,14 @@
 #include <iostream>
 #include <cstring>
 
+FileManager::FileManager(){
+    filename = new char[strlen("unk") + 1];
+    strcpy(this->filename,"unk");
+    content = new char[strlen("unk") + 1];
+    strcpy(this->content,"unk");
+    std::cout<<"S-a creat fisierul "<<this->filename<<'\n';
+}
+
 FileManager::FileManager(const char* name, const char* str){
             filename = new char[strlen(name) + 1];
             strcpy(this->filename,name);
@@ -39,7 +47,31 @@ void FileManager::setContent(char* str){
             this->content = new char[strlen(str) + 1];
             strcpy(this->content,str);
         }
-void FileManager::setName(char* str){
+void FileManager::setName(const char* str){
             this->filename = new char[strlen(str) + 1];
             strcpy(this->filename,str);
         }
+
+
+FileManager& FileManager::operator=(const FileManager& other){
+    if( this != &other){
+            filename = new char[strlen(other.filename) + 1];
+            strcpy(this->filename,other.filename);
+            content = new char[strlen(other.content) + 1];
+            strcpy(this->content,other.content);
+    }
+            return *this;
+    
+}
+
+FileManager& FileManager::operator=(FileManager&& other){
+
+        if(this != &other){
+            filename = other.filename;
+            content = other.content;
+            other.filename = nullptr;
+            other.content = nullptr; 
+        }
+
+        return *this;
+}
