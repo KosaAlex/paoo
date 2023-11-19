@@ -42,20 +42,31 @@ Abort trap: 6*/
     // f4.setName("f4");
 
 
-    //f1.~FileManager();
-
     FileManager txtFile;
     JavaFileManager javaFile("f1","Hello!");
     CppFileManager cppFile("f2","Hi!");
 
-    JavaFileManager javaFile2;
-    CppFileManager cppFile2;
-
     javaFile.showContent();
     cppFile.showContent();
 
+    JavaFileManager javaFile2;
+
     javaFile2 = javaFile;
-    cppFile2 = cppFile;
+    CppFileManager cppFile2 = cppFile;
+
+    javaFile2.showContent();
+    cppFile2.showContent();
+
+    JavaFileManager javaFile3;
+    javaFile3 = std::move(javaFile);
+    CppFileManager cppFile3 = std::move(cppFile);
+
+    javaFile3.showContent();
+    cppFile3.showContent();
+
+    txtFile = cppFile3;
+
+
     
 
 }

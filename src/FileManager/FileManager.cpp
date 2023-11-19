@@ -21,7 +21,9 @@ void FileManager::showContent(){
             std::cout<<"Nume: "<<filename<<", Continut: "<<content<<"\n\n";
         }
 FileManager::~FileManager(){
-            std::cout<<"Se sterge obiectul "<<filename<<'\n';
+            if(filename != nullptr)
+                std::cout<<"Se sterge obiectul "<<filename<<'\n';
+            
             delete[] filename;
             delete[] content;
             //std::cout<<"Aici!\n";
@@ -37,6 +39,7 @@ FileManager::FileManager(const FileManager& other){
             std::cout<<"S-a apelat copy constructorul\n";
         }
 FileManager::FileManager(FileManager&& other){
+
             filename = other.filename;
             content = other.content;
             other.filename = nullptr;
@@ -60,6 +63,7 @@ FileManager& FileManager::operator=(const FileManager& other){
             content = new char[strlen(other.content) + 1];
             strcpy(this->content,other.content);
     }
+        std::cout<<"S-a apelat asignment operator\n";
             return *this;
     
 }
@@ -67,11 +71,13 @@ FileManager& FileManager::operator=(const FileManager& other){
 FileManager& FileManager::operator=(FileManager&& other){
 
         if(this != &other){
+
+
             filename = other.filename;
             content = other.content;
             other.filename = nullptr;
             other.content = nullptr; 
         }
-
+        std::cout<<"S-a apelat Move operator\n";
         return *this;
 }
