@@ -2,6 +2,11 @@
 #include <iostream>
 #include <cstring>
 
+std::mutex nrThreadsMutex;
+std::mutex runningFilesMutex;
+string FileManager::runningFiles[4];
+int FileManager::nrThreads;
+
 FileManager::FileManager(){
     filename = new char[strlen("unk") + 1];
     strcpy(this->filename,"unk");
@@ -80,4 +85,44 @@ FileManager& FileManager::operator=(FileManager&& other){
         }
         std::cout<<"S-a apelat Move operator\n";
         return *this;
+}
+
+void FileManager::run(){
+
+    pthread_t thread;
+    nrThreadsMutex.lock();
+    nrThreads++;
+    nrThreadsMutex.unlock();
+
+    pthread_create(&thread, NULL, registerFiles, this);
+
+    std::cout<<"Fisierul "<<this->filename<<" ruleaza"<<endl;
+
+}
+void *FileManager::registerFiles(void *arg){
+    FileManager *file = static_cast<FileManager*>(arg);
+    runningFilesMutex.lock();
+    for (int i =0; i<4;i++){
+        if(runningFiles[i].empty()){
+            runningFiles[i] = file->filename;
+            break;
+        }
+    }
+
+    runningFilesMutex.unlock();
+    nrThreadsMutex.lock();
+    nrThreads--;
+    nrThreadsMutex.unlock();
+
+    return NULL;
+
+
+}
+void FileManager::showRunningFiles(){
+    while(nrThreads);
+    std::cout<<"Fisierele care ruleaza: "<<endl;
+    for (int i = 0; i<4;i++){
+        std::cout<<runningFiles[i]<<" ";
+    }
+    std::cout<<endl;
 }

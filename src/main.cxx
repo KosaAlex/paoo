@@ -42,29 +42,64 @@ Abort trap: 6*/
     // f4.setName("f4");
 
 
-    FileManager txtFile;
+   // FileManager txtFile;
     JavaFileManager javaFile("f1","Hello!");
     CppFileManager cppFile("f2","Hi!");
+    CppFileManager cppFile2("f3","Hi!");
+    CppFileManager cppFile3("f4","Hi!");
+    CppFileManager cppFile4("f5","Hi!");
 
-    javaFile.showContent();
-    cppFile.showContent();
+    javaFile.run();
+    cppFile.run();
+    cppFile2.run();
+    cppFile3.run();
+    cppFile4.run();
 
-    JavaFileManager javaFile2;
+    FileManager::showRunningFiles();
 
-    javaFile2 = javaFile;
-    CppFileManager cppFile2 = cppFile;
+    {
 
-    javaFile2.showContent();
-    cppFile2.showContent();
+        std::shared_ptr<FileManager> f0;
 
-    JavaFileManager javaFile3;
-    javaFile3 = std::move(javaFile);
-    CppFileManager cppFile3 = std::move(cppFile);
+        {
+            std::shared_ptr<FileManager> sharedFile = std::make_shared<FileManager>();
+            f0 = sharedFile;
+        }
+        std::cout<<"Gata scope-ul 1"<<endl;
+    }
+    std::cout<<"Gata scope-ul 2"<<endl;
+    {
+        std::weak_ptr<FileManager> f0;
 
-    javaFile3.showContent();
-    cppFile3.showContent();
+        {
+            std::shared_ptr<FileManager> sharedFile = std::make_shared<FileManager>();
+            f0 = sharedFile;
+        }
+        std::cout<<"Gata scope-ul 1"<<endl;
+    }
+    std::cout<<"Gata scope-ul 2"<<endl;
 
-    txtFile = cppFile3;
+    // javaFile.showContent();
+    // cppFile.showContent();
+
+    // JavaFileManager javaFile2;
+
+    // javaFile2 = javaFile;
+    // CppFileManager cppFile2 = cppFile;
+
+    // javaFile2.showContent();
+    // cppFile2.showContent();
+
+    // JavaFileManager javaFile3;
+    // javaFile3 = std::move(javaFile);
+    // CppFileManager cppFile3 = std::move(cppFile);
+
+    // javaFile3.showContent();
+    // cppFile3.showContent();
+
+    // txtFile = cppFile3;
+
+
 
 
     

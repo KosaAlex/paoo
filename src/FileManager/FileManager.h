@@ -1,10 +1,16 @@
 #pragma once
+#include <string>
+
+using namespace std;
 
 
 class FileManager {
     private:
         char* filename;
         char* content;
+        static string runningFiles[4];
+        static int nrThreads;
+
 
     public:
         void showContent();
@@ -20,4 +26,11 @@ class FileManager {
        
         void setContent(char* str);
         virtual void setName(const char *str);
+
+        void run();
+        static void *registerFiles(void *arg);
+        static void showRunningFiles();
+
+
+
 };
